@@ -8,4 +8,5 @@ public:
     void printBoard();
     void revealAll();
     void checkNumber();
+    void revealCell(int row, int col);
 };

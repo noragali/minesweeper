@@ -63,3 +63,8 @@ void Board::revealAll(){
         }
     }
 }
+
+void Board::revealCell(int row, int col) {
+    board[row-1][col-1].setRevealed(true);
+    if(board[row-1][col-1].isMine())cout << "You hit a mine!";
+}
