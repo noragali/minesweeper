@@ -6,5 +6,6 @@ private:
 public:
     Board();
     void printBoard();
+    void revealAll();
     void checkNumber();
 };

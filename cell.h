@@ -5,12 +5,13 @@ private:
     bool flagged;
     int neighbourCount;
 public:
+    Cell();
     bool isMine();
     bool isRevealed();
     bool isFlagged();
 
-    void setMine();
-    void setRevealed();
+    void setMine(bool mineValue);
+    void setRevealed(bool revealedValue);
     void setNeighbourCount(int number);
 
     void reveal();

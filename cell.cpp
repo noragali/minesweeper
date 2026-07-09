@@ -1,4 +1,5 @@
 #include <iostream>
+#include "cell.h"
 using namespace std;
 
 Cell::Cell() {
@@ -20,12 +21,12 @@ bool Cell::isFlagged() {
     return flagged;
 }
 
-void Cell::setMine() {
-    mine = true;
+void Cell::setMine(bool mineValue) {
+    mine = mineValue;
 }
 
-void Cell::setRevealed() {
-    revealed = true;
+void Cell::setRevealed(bool revealedValue) {
+    revealed = revealedValue;
 }
 
 void Cell::toggleFlag() {
