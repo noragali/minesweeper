@@ -8,6 +8,7 @@ int main() {
     board.checkNumber();
 
     bool gameOver = false;
+    bool win = false;
 
     while(gameOver == false) {
         int row, col;
@@ -25,7 +26,17 @@ int main() {
         if(board.isMineRevealed()) {
             gameOver = true;
         }
+
+        if(board.hasWon()) {
+            win = true;
+            gameOver = true;
+        }
     }
 
-    cout<<"You hit a mine!";
+    board.revealAll();
+    board.printBoard();
+
+
+    if(win == true) cout <<"You have won!";
+    else cout << "You lost!";
 }

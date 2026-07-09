@@ -65,6 +65,8 @@ void Board::revealAll(){
 }
 
 void Board::revealCell(int row, int col) {
+    if(board[row][col].isFlagged())
+        return;
     if(row < 0 || row >= 9 || col < 0 || col >= 9)
         return;
     if(board[row][col].isRevealed())
@@ -92,4 +94,13 @@ bool Board::isMineRevealed(){
         }
     }
     return false;
+}
+
+bool Board::hasWon() {
+    for(int i=0; i<9; i++) {
+        for(int j=0; j<9; j++) {
+            if(!board[i][j].isRevealed() && !board[i][j].isMine()) return false;
+        }
+    }
+    return true;
 }

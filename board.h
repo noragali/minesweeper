@@ -10,4 +10,5 @@ public:
     void checkNumber();
     void revealCell(int row, int col);
     bool isMineRevealed();
+    bool hasWon();
 };
