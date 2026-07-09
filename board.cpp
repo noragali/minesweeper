@@ -104,3 +104,9 @@ bool Board::hasWon() {
     }
     return true;
 }
+
+void Board::toggleFlag(int row, int col){
+    if(row<0 || col<0 || row>=9 || col>=9) return;
+    if(board[row][col].isRevealed()) return;
+    board[row][col].toggleFlag();
+}

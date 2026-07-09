@@ -40,5 +40,5 @@ int Cell::getNeighbourCount() {
 
 void Cell::setNeighbourCount(int number) {
     neighbourCount = number;
-
 }
+

@@ -11,4 +11,5 @@ public:
     void revealCell(int row, int col);
     bool isMineRevealed();
     bool hasWon();
+    void toggleFlag(int row, int col);
 };

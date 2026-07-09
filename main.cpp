@@ -12,8 +12,12 @@ int main() {
 
     while(gameOver == false) {
         int row, col;
+        char answer;
 
         board.printBoard();
+
+        cout << "Enter flag or reveal(f or r): ";
+        cin >> answer;
 
         cout << "Enter row: ";
         cin >> row;
@@ -21,7 +25,8 @@ int main() {
         cout << "Enter col: ";
         cin >> col;
 
-        board.revealCell(row-1, col-1);
+        if(answer == 'r' || answer == 'R') board.revealCell(row-1, col-1);
+        else if(answer == 'f' || answer == 'F') board.toggleFlag(row-1, col-1);
 
         if(board.isMineRevealed()) {
             gameOver = true;
