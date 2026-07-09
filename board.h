@@ -4,4 +4,5 @@ private:
 public:
     Board();
     void printBoard();
+    void checkNumber();
 };

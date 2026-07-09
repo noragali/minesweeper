@@ -35,3 +35,22 @@ void Board::printBoard(){
      cout << endl;
     }
 }
+
+void Board::checkNumber() {
+    for(int i=0; i<9; i++) {
+        for(int j=0; j<9; j++) {
+            int num = 0;
+
+            if(board[i][j] == '*') continue;
+            if(i<8) if(board[i+1][j] == '*') num++;
+            if(i>0) if(board[i-1][j] == '*') num++;
+            if(j<8) if(board[i][j+1] == '*') num++;
+            if(j>0) if(board[i][j-1] == '*') num++;
+            if(i>0&& j<8) if(board[i-1][j+1] == '*') num++;
+            if(i<8 && j<8) if(board[i+1][j+1] == '*') num++;
+            if(i>0 && j>0) if(board[i-1][j-1] == '*') num++;
+            if(i<8 && j>0) if(board[i+1][j-1] == '*') num++;
+            board[i][j] = '0' + num;
+        }
+    }
+}
