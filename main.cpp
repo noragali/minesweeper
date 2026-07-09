@@ -7,15 +7,25 @@ int main() {
 
     board.checkNumber();
 
-    int row, col;
+    bool gameOver = false;
 
-    cout << "Enter row: ";
-    cin >> row;
+    while(gameOver == false) {
+        int row, col;
 
-    cout << "Enter col: ";
-    cin >> col;
+        board.printBoard();
 
-    board.revealCell(row, col);
+        cout << "Enter row: ";
+        cin >> row;
 
-    board.printBoard();
+        cout << "Enter col: ";
+        cin >> col;
+
+        board.revealCell(row-1, col-1);
+
+        if(board.isMineRevealed()) {
+            gameOver = true;
+        }
+    }
+
+    cout<<"You hit a mine!";
 }

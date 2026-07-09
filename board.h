@@ -9,4 +9,5 @@ public:
     void revealAll();
     void checkNumber();
     void revealCell(int row, int col);
+    bool isMineRevealed();
 };
