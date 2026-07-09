@@ -3,10 +3,13 @@
 	<iostream>
 	"board.h"
 
-1783579227 c:\users\norag\onedrive\dators\projects\minesweeper cpp\minesweeper\board.h
+1783598600 c:\users\norag\onedrive\dators\projects\minesweeper cpp\minesweeper\board.h
+	"cell.h"
 
-1783578527 source:c:\users\norag\onedrive\dators\projects\minesweeper cpp\minesweeper\board.cpp
+1783597463 source:c:\users\norag\onedrive\dators\projects\minesweeper cpp\minesweeper\board.cpp
 	<iostream>
-	<cstdlib>
+	<random>
 	"board.h"
+
+1783598625 c:\users\norag\onedrive\dators\projects\minesweeper cpp\minesweeper\cell.h
 

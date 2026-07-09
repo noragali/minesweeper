@@ -1,6 +1,8 @@
+#include "cell.h"
+
 class Board{
 private:
-    char board[9][9];
+    Cell board[9][9];
 public:
     Board();
     void printBoard();
