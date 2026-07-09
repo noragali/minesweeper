@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1783576543 source:c:\users\norag\onedrive\dators\projects\minesweeper cpp\minesweeper\main.cpp
+	<iostream>
+	"board.h"
+
+1783577150 c:\users\norag\onedrive\dators\projects\minesweeper cpp\minesweeper\board.h
+
+1783578527 source:c:\users\norag\onedrive\dators\projects\minesweeper cpp\minesweeper\board.cpp
+	<iostream>
+	<cstdlib>
+	"board.h"
+
